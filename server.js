@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-app.use(express.json());
+app.use(express.static('public'));
 
 let rooms = {};
 
