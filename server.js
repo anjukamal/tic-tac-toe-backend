@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-app.use(express.static(path.join(__dirname, '../client/public')));
+app.use(express.json());
 
 let rooms = {};
 
